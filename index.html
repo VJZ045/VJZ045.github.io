@@ -3,9 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Album Website</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Future site of my awesome portfolio!</h1>
+    <section class="header">
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                  <li><a href="album.html">Album</a></li>
+                    <li><a href="merch.html">Merchandise</a></li>
+            </ul>
+        </div>
+
+        <div class="text-box">
+            <h1>VANTADOOM</h1>
+            <p>Listen Now</p> 
+            <img src="images/play.png" id="icon">
+        </div>
+
+    </section>
+            <audio id="mysound">
+        <source src="audio/the-grabber.mp3" type="audio/mp3">
+    </audio>
+
+<script>
+    var mysound = document.getElementById("mysound");
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+        console.log(mysound.pause)
+       if(mysound.paused){
+            mysound.play();
+            icon.src = "images/pause.png";
+        }else{
+            mysound.pause();
+            icon.src = "images/play.png";
+        }
+    }
+
+</script>
+
+<section class="info">
+    <h2>WHO IS VANTA?</h2>
+    <p>Vanta is the vision behind Tristan Schwekendiek a tech college student who happens to have a 
+            nact for creating awesome beats and samples. Tristan has been sampling and creating music for quite
+            a while however, he was recently able to realease his first ever album VantaDOOM which premiered on youtube October
+            31, 2025. His creativity and inspiration from MFDoom really shines through in this album and I am
+            grateful for the oppurtunity to be able to showcase his work.
+        </p>
+            <img src="images/computer.jpg" alt="Computer">
+</section>
+
 </body>
 </html>

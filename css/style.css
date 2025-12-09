@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../images/background.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+    min-height: 400px;
+    margin-right: 60px;
+    font-size: 25px;
+}
+ul li {
+    display: inline-block;
+}
+ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+}
+ul li a:hover {
+    background-color: rgb(255, 255, 255);
+    color:rgb(19, 69, 8);
+}
+.text-box {
+    width: 90%;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 110px;
+}
+.text-box p {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px 0 10px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+#icon {
+    cursor: pointer;
+}
+.info {
+    background-color: black;
+    margin:auto;
+    text-align:center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.info h2 {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+.info p {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-bottom: 20px;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+.playlist {
+    background-color: black;
+    margin:auto;
+    text-align:center;
+    padding-top: 20px;
+}
+
+.playlist h2 {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    padding-bottom: 5px;
+}
+p {
+    color: black;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.playlist-col {
+    flex-basis: 31%;
+    background: rgb(255,255,255);
+    border-radius: 25px;
+    margin-bottom: 5%;
+    padding: 15px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.playlist h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.playlist-col:hover {
+    box-shadow: 0 0 30px 30px rgba(0, 0, 0, 0.2);
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+  width:600px;
+  margin:auto;
+  margin-left: 7%;
+  text-align: center;
+  font-family: arial;
+  float:left;
+}
+.price {
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  text-align: center;
+}
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.card button:hover {
+  opacity: 0.7;
+}
